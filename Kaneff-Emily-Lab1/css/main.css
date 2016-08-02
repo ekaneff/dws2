@@ -111,5 +111,9 @@ a[href~="#history"] {
 	font-style: italic;
 }
 
+a:not(#overview) {
+	color: black;
+}
+
 
 
