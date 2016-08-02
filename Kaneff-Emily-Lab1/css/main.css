@@ -1,0 +1,115 @@
+body {
+
+	margin: 0 auto;
+	padding: 0;
+	background-color: #9CB26B;
+}
+
+div {
+
+	background-color: honeydew;
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+h2:first-child{
+
+	font-style: italic;
+}
+
+h2 + p, p + p {
+
+	line-height: 25px;
+}
+
+tr:nth-child(4n + 1) {
+
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.bold {
+
+	font-weight: bold;
+}
+
+ul > li {
+
+	list-style-type: square;
+}
+
+td + td {
+	text-align: right;
+}
+
+h2 ~ ul {
+	background-color: white;
+}
+
+a:link {
+	color: #9CB26B;
+	text-decoration: none;
+}
+
+a:vistied {
+	color: black;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:active {
+	color: white;
+}
+
+h2 ~ ul li:last-child{
+	color: green;
+}
+
+h1:only-child {
+	font-family: helvetica, sans-serif;
+}
+
+p:first-of-type {
+	font-family: helvetica, sans-serif;
+}
+
+p:last-of-type {
+	font-family: helvetica, sans-serif;
+}
+
+h1:only-of-type {
+	color:blue;
+}
+
+tr:nth-last-child(even){
+	background-color: gray;
+	color: white;
+	padding: 5px;
+}
+
+li:nth-of-type(2n + 1){
+	background-color: #e7e7e7;
+}
+
+p:nth-last-of-type(3n + 2) {
+	background-color: #e7e7e7;
+}
+
+section[id] {
+	background-color: #A1E5EA;
+}
+
+a[href*="#overview"] {
+	font-style: italic;
+}
+
+a[href~="#history"] {
+	font-style: italic;
+}
+
+
+
