@@ -1,0 +1,137 @@
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-image: url('../images/grass.jpg');
+}
+
+#wrapper {
+	width: 85%;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #B9DA8B;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+header > h1 {
+	margin-top: 0px;
+	color: #1D584E;
+	text-align: center;
+	font-family: 'Pattaya', sans-serif;
+	padding-top: 10px;
+	font-size: 50px;
+}
+
+ul:only-child {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav ul > li {
+	display: inline;
+	padding: 10px;
+}
+
+li + a, a:link {
+
+	text-decoration: none;
+	color: #CC6D66;
+}
+
+
+a:active {
+	color: white;
+}
+
+a:hover {
+	font-size: 18px;
+}
+
+a:visited {
+	color: #CC6D66;
+}
+
+h2 ~ p {
+	line-height: 25px;
+}
+
+img:first-child {
+
+	height: 300px;
+	width: 500px;
+	float: right;
+	margin-top: 20px;
+}
+
+figcaption:last-child {
+	height: 100px;
+	width: 500px;
+	float:right;
+}
+
+td:last-child {
+	text-align: right;
+}
+
+table:first-of-type {
+	float: left;
+	margin: 15px;
+	border: 2px solid #1D584E;
+	border-collapse: collapse;
+}
+
+tr:nth-child(4n + 1) {
+	background-color: rgba(204, 109, 102, .8);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+td {
+	padding: 5px;
+}
+
+h2:last-of-type {
+	color: rgb(29, 88, 78);
+}
+
+h3:only-of-type {
+	font-size: 12px;
+}
+
+h2 ~ ul{
+	line-height: 30px;
+	list-style-type: square;
+}
+
+tr:nth-last-child(-n+3) {
+	font-style: italic;
+}
+
+h2 + ul li:nth-of-type(2n + 1) {
+	font-style: italic;
+}
+
+nav > ul li:nth-last-of-type(1) {
+	font-style: italic;
+}
+
+span:not(.bold) {
+	text-transform: uppercase;
+}
+
+span[class] {
+	color: rgb(204, 109, 102);
+}
+
+a[href*="#"] {
+	font-weight: bold;
+}
+
+span[class~="bold"] {
+	font-weight: bold;
+}
+
+
