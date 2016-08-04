@@ -1,0 +1,69 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+#scape {
+	background-image: url('../images/bg.jpg');
+	height: 630px;
+	overflow: hidden;
+}
+
+#coa {
+	background-color: whitesmoke;
+	width: 30%;
+	float: right;
+	margin-top: 250px;
+	margin-right: 500px;
+	padding: 20px;
+	text-align: center;
+}
+
+#msg {
+	background-color: #0E348F;
+	text-align: center;
+	color: whitesmoke;
+	line-height: 50px;
+	font-size: 30px;
+	padding: 10px;
+}
+
+section#tours{
+	background-color: #101F5A;
+	color: whitesmoke;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+article.tourCard {
+	background: #F8F0DC;
+	color: #101F5A;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 80%;
+	overflow: hidden;
+}
+
+article img {
+	float: left;
+
+}
+
+article section {
+	float: left;
+	width: 40%;
+	margin-left: 20px;
+
+}
+
+section#tours > h3 {
+	margin-top: 0px;
+}
+
+footer p{
+	margin: 0;
+}
