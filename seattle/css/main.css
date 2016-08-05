@@ -1,10 +1,7 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-}
-
-h1 {
-	margin: 0;
+	font-family: helvetica, sans-serif;
 }
 
 #scape {
@@ -32,11 +29,22 @@ h1 {
 	padding: 10px;
 }
 
+section h3 {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 30px;
+	padding-top: 20px;
+}
+
 section#tours{
 	background-color: #101F5A;
 	color: whitesmoke;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+section#tours > h3 {
+	margin-top: 0px;
 }
 
 article.tourCard {
@@ -46,24 +54,82 @@ article.tourCard {
 	margin-bottom: 20px;
 	width: 80%;
 	overflow: hidden;
+	padding: 5px;
 }
 
 article img {
+	height: 300px;
+	width: 650px;
 	float: left;
-
 }
 
 article section {
 	float: left;
 	width: 40%;
 	margin-left: 20px;
-
 }
 
-section#tours > h3 {
-	margin-top: 0px;
+article h4, h5{
+	text-transform: capitalize;
+	font-size: 20px;
+	text-align: center;
 }
+
+article h5 {
+	font-size: 15px;
+}
+
+article p {
+	font-size: 15px;
+}
+
+p a {
+	background-color: #FF9100;
+	line-height: 40px;
+	padding: 10px;
+	text-decoration: none;
+	color: #101F5A;
+}
+
+p a:visited {
+	color: #101F5A;
+}
+
+p a:hover {
+	background: #101F5A;
+	color: whitesmoke;
+}
+
+section#attractions {
+	background-color: #264C99;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+section.attCard {
+	float: left;
+	width: 350px;
+	background-color: whitesmoke;
+	color: #101F5A;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+section#contain {
+	margin: 0 auto;
+	width: 90%;
+}
+
+section.attCard h4, section.attCard p{
+	padding: 10px;
+	margin-left: 10px;
+}
+
+
+
 
 footer p{
 	margin: 0;
+	padding: 20px;
 }
