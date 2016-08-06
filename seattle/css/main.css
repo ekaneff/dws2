@@ -11,13 +11,23 @@ body {
 }
 
 #coa {
-	background-color: whitesmoke;
-	width: 30%;
+	background-color: rgba(245, 245, 245, .90);
+	width: 40%;
 	float: right;
 	margin-top: 250px;
-	margin-right: 500px;
-	padding: 20px;
+	margin-right: 450px;
+	padding: 00px;
 	text-align: center;
+	color: #101F5A;
+}
+
+#coa h1 {
+	font-size: 30px;
+}
+
+#coa h2 {
+	font-size: 20px;
+	font-style: italic;
 }
 
 #msg {
@@ -33,7 +43,7 @@ section h3 {
 	text-align: center;
 	text-transform: capitalize;
 	font-size: 30px;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 section#tours{
@@ -55,6 +65,10 @@ article.tourCard {
 	width: 80%;
 	overflow: hidden;
 	padding: 5px;
+}
+
+article.tourCard:last-of-type {
+	margin-bottom: 70px;
 }
 
 article img {
@@ -109,7 +123,7 @@ section#attractions {
 section.attCard {
 	float: left;
 	width: 350px;
-	background-color: whitesmoke;
+	background-color: #F8F0DC;
 	color: #101F5A;
 	margin-left: 50px;
 	margin-bottom: 20px;
@@ -121,7 +135,7 @@ section#contain {
 	width: 90%;
 }
 
-section.attCard h4, section.attCard p{
+section.attCard h4, section.attCard p 
 	padding: 10px;
 	margin-left: 10px;
 }
@@ -132,4 +146,5 @@ section.attCard h4, section.attCard p{
 footer p{
 	margin: 0;
 	padding: 20px;
+	background: #191E6B;
 }
