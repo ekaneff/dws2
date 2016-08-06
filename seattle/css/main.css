@@ -6,9 +6,65 @@ body {
 
 #scape {
 	background-image: url('../images/bg.jpg');
-	background-repeat: no-repeat;
+	background-position: center;
 	height: 630px;
+	z-index: -1;
+}
+
+header {
+	background-color: #6B5C94;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+}
+
+nav {
+	float: right;
 	overflow: hidden;
+}
+
+nav ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	float: left;
+	width: 200px;
+	line-height: 50px;
+	text-align: center;
+}
+
+li a {
+	display: block;
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+li a:visited {
+	color: white;
+}
+
+li a:hover {
+	background-color: #968AB6;
+}
+
+li a:active {
+	color: white;
+}
+
+li ul {
+	display: none;
+	width: 200px;
+}
+
+li ul li{
+	background-color: #6B5C94;
+}
+
+nav ul li:hover ul {
+ 	display: block;
 }
 
 #coa {
@@ -136,13 +192,10 @@ section#contain {
 	width: 90%;
 }
 
-section.attCard h4, section.attCard p 
+section.attCard h4, section.attCard p {
 	padding: 10px;
 	margin-left: 10px;
 }
-
-
-
 
 footer p{
 	margin: 0;
