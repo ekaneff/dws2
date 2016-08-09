@@ -1,0 +1,115 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/* orange header bar */
+header {
+	background: #FF9B42;
+	overflow: hidden;
+}
+
+#searchbar {
+	width: 850px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25px;
+	float: left;
+	margin-left: 100px;
+}
+
+input[type=text] {
+	width: 700px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 2px;
+	border: none;
+	padding: 5px;
+}
+
+#button {
+	padding: 9px;
+	background-color: #0FA3B1;
+	display: inline;
+	color: whitesmoke;
+	border-radius: 2px;
+}
+
+h1 {
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 30px;
+	color: #0FA3B1;
+}
+
+h1 > span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #515151;
+}
+
+h2, #cart {
+	display: inline;
+}
+
+h2 a {
+	font-size: 20px;
+	margin-right: 30px;
+	text-decoration: none;
+	/*color: #717C89;*/
+	color: #515151;
+}
+
+div + div{
+	float: right;
+	width: 250px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* nav styling */
+
+#nav {
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	border-bottom: 1px solid #515151;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 1020px;
+}
+
+li {
+	float: left;
+	padding-left: 20px;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 40px;
+}
+
+li a {
+	text-decoration: none;
+	display: block;
+	color: #515151;
+}
+
+li a:hover {
+	border-top: 6px solid #0FA3B1;
+}
+
+
+
+
+
+
+
+
+
+
