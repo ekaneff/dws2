@@ -11,7 +11,7 @@
 			<h1>Tiger<span>Direct</span></h1>
 			<div id="searchbar">
 				<input type="text" placeholder="Search entire site..." />
-				<p id="button">Search</p>
+				<p class="button"><a href="#">Search</a></p>
 			</div>
 			<div>
 				<h2><a href="#">Sign in</a></h2>
@@ -21,31 +21,52 @@
 		<section id="nav">
 			<nav>
 				<ul>
-					<li><a href="#">Today</a></li>
-					<li><a href="#">Electronics</a></li>
-					<li><a href="#">Clothing</a></li>
-					<li><a href="#">Books</a></li>
-					<li><a href="#">Home & Garden</a></li>
-					<li><a href="#">Toys</a></li>
-					<li><a href="#">Music</a></li>
+					<li><a href="#" class="active">Today</a></li>
+					<li><a href="#">Desktops</a></li>
+					<li><a href="#">Laptops</a></li>
+					<li><a href="#">Phones</li>
+					<li><a href="#">Office & Supplies</a></li>
 				</ul>
 			</nav>
 		</section>
-		<section>
-			<img src="images/blue-orange-sale.jpeg" alt="Show your spirit for Rio, save up to 40%"/ class="deals">
-			<img src="images/middle-sale.jpg" alt="Entire site 30%-75% off" clas="deals"/>
-			<img src="images/bookdeals.jpg" alt="Up to 75% off all clothing items" class="deals"/>
+
+		<section id ="deals">
+			<section id="dow">
+				<img src="images/dow.jpg" alt="HP EliteBook 8440p Notebook PC - 14inch LED Display, Intel Core i5-520M 2.40GHz Dual-Core Processor, 4GB DDR3 RAM, 250GB HDD, Windows 10 Professional 64-bit (Refurbished) - RB-729910987569" />
+				<div>
+					<h3>Deal of the Week</h3>
+
+					<p>HP EliteBook 8440p Intel&reg; Core&trade; i5 Refurbished Notebook<br><span>Now Only $219.00</span></p>
+					<p><a href="#" class="button">Shop now</a></p>
+				</div>
+			</section>
+
+			<section id="ads">
+				<img src="images/pcgaming.jpg" alt="PC Gaming: Shop the most powerful systems on earth" />
+				<img src="images/HPE.jpg" alt="Hewlett Packard Enterprise: Servers starting from $399" />
+			</section>
+
 		</section>
 
-		<section>
+		<section id="featured">
 			<h3>Today's Featured Items</h3>
 
-			<section>
+			<article>
+				<img src="images/probook455.jpg" alt="HP Probook 455 G3 Notebook PC" />
+
+				<h4>HP Probook 455 G3 Notebook PC</h4>
+				<p>AMD A10-8700P Quad-Core Processor, 1.80GHz, 8GB DDR3, 1TB HDD, 15.6” Display, 1366x768, USB 2.0, USB 3.0, Windows 10 Pro 64-Bit OS - X9T93UT#ABA</p>
+				<h5>List Price: <span class="listPrice">$799.99</span></h5>
+				<h5>You Pay: <span class="youPay">$479.99</span></h5>
+				<p class="button">Shop</p>
+
+			</article>
+			<!--<section>
 				<img src="images/girlshirt.jpg" alt="teal and black checkered button up flannel" class="featured" />
 				<img src="images/manpants.jpg" alt="tan dress pants" class="featured" />
-				<img src="images/game.jpg" alt="Battlefield 1 Enlister" class="featured" />
+				<img src="images/game.jpg" alt="Battlefield 1 Enlister" class="featured" id="middle"/>
 				<img src="images/iphonecase.jpg" alt="magenta and white iPhone 6 case shockproof antislip" class="featured" />
-			</section>
+			</section>-->
 		</section>
 	</body>
 </html>

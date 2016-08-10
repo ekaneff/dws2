@@ -2,8 +2,16 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
+	color:#515151;
 }
 
+h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.active {
+	border-top: 6px solid #0FA3B1;
+}
 
 /* orange header bar */
 header {
@@ -17,7 +25,7 @@ header {
 	text-align: center;
 	margin-top: 25px;
 	float: left;
-	margin-left: 100px;
+	margin-left: 80px;
 }
 
 input[type=text] {
@@ -29,18 +37,24 @@ input[type=text] {
 	padding: 5px;
 }
 
-#button {
-	padding: 9px;
+.button {
 	background-color: #0FA3B1;
+	padding: 9px;
 	display: inline;
 	color: whitesmoke;
 	border-radius: 2px;
+	font-size: 20px;
+}
+
+.button:hover{
+	background: #277077;
+	cursor: pointer;
 }
 
 h1 {
 	float: left;
 	font-family: 'Montserrat', sans-serif;
-	margin-left: 30px;
+	margin-left: 50px;
 	color: #0FA3B1;
 }
 
@@ -52,6 +66,13 @@ h1 > span {
 
 h2, #cart {
 	display: inline;
+}
+
+p a {
+	font-size: 20px;
+	text-decoration: none;
+	/*color: #717C89;*/
+	color: whitesmoke;
 }
 
 h2 a {
@@ -76,6 +97,8 @@ div + div{
 	overflow: hidden;
 	text-align: center;
 	border-bottom: 1px solid #515151;
+	height: 42px;
+	width: 1280px;
 }
 
 nav ul {
@@ -91,7 +114,7 @@ li {
 	padding-left: 20px;
 	text-align: center;
 	line-height: 40px;
-	margin-left: 40px;
+	margin-left: 90px;
 }
 
 li a {
@@ -104,11 +127,83 @@ li a:hover {
 	border-top: 6px solid #0FA3B1;
 }
 
+/* ads styling */
 
+section#deals {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1280px;
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
 
+section > img {
+	float: left;
+}
 
+img + div {
+	width: 400px;
+	margin-top: 20px;
+	float: left;
+}
 
+p > span {
+	font-weight: 600;
+	color: #FF9B42;
+}
 
+#dow {
+	border-right: 1px solid #515151;
+	width: 700px;
+}
+
+#ads {
+	margin-top: 40px;
+	border-left: 1px solid #515151;
+	overflow: hidden;
+}
+
+#ads img {
+	float: right;
+	background-color: blue;
+	margin-bottom: 15px;
+
+}
+
+section#featured {
+	clear: both;
+	width: 1280px;
+	margin: 0 auto;
+}
+
+section#featured h3 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #515151;
+	
+	
+}
+
+section > article {
+	width: 300px;
+}
+
+.listPrice {
+	color: #EC0B43;
+	text-decoration: line-through;
+}
+
+.youPay {
+	color: #FF9B42;
+}
+
+article h5 {
+	font-size: 16px;
+}
+
+h4 ~ p {
+	font-size: 12px;
+}
 
 
 
