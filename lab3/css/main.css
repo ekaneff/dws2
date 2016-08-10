@@ -9,9 +9,6 @@ h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.active {
-	border-top: 6px solid #0FA3B1;
-}
 
 /* orange header bar */
 header {
@@ -54,7 +51,7 @@ input[type=text] {
 h1 {
 	float: left;
 	font-family: 'Montserrat', sans-serif;
-	margin-left: 50px;
+	margin-left: 80px;
 	color: #0FA3B1;
 }
 
@@ -92,6 +89,11 @@ h2 a {
 
 /* nav styling */
 
+.active {
+	border-top: 6px solid #0FA3B1;
+	line-height: 30px;
+}
+
 #nav {
 	margin: 0 auto;
 	overflow: hidden;
@@ -125,6 +127,7 @@ li a {
 
 li a:hover {
 	border-top: 6px solid #0FA3B1;
+	line-height: 30px;
 }
 
 /* ads styling */
@@ -166,12 +169,16 @@ p > span {
 
 #ads img {
 	float: right;
-	background-color: blue;
 	margin-bottom: 15px;
 
 }
 
 /* featured styling */
+
+#contain {
+	width: 1280px;
+	margin: 0 auto;
+}
 
 section#featured {
 	clear: both;
@@ -211,7 +218,7 @@ article h5:last-of-type {
 	margin-bottom: 15px;
 }
 
-article img {
+#featured article img {
 	height: 300px;
 	width: 300px;
 }
@@ -271,6 +278,108 @@ footer section {
 	padding-top: 50px;
 	margin-right: 30px;
 }
+
+/* breadbrumbs */
+
+#breadcrumbs {
+	margin-left: 80px;
+}
+#breadcrumbs a {
+	color: #FF9B42;
+	font-size: 13px;
+}
+
+/* aside styling */
+
+aside {
+	float: left;
+	width: 200px;
+	margin-left: 80px;
+}
+
+aside h3 {
+	border-bottom: 1px solid #515151;
+	padding-bottom: 5px;
+	margin-top: 0px;
+}
+
+aside p a {
+	color: #0FA3B1;
+	font-size: 16px;
+}
+
+aside p a:hover {
+	text-decoration: underline;
+	padding-bottom: 5px;
+}
+
+/*brand selection*/
+
+#brandSelection {
+	overflow: hidden;
+}
+
+.brand {
+	overflow: hidden;
+	width: 350px;
+	margin-right: 0px;
+}
+
+.brand img {
+	height: 160px;
+	width: 360px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.brand:first-of-type {
+	margin-left: 10px;
+}
+
+/* All laptops */
+
+#allLaptops {
+	overflow: hidden;
+}
+
+#allLaptops h3 {
+	width: 1060px;
+	border-bottom: 1px solid #515151;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	margin-top: 50px;
+	padding-bottom: 5px;
+}
+
+.wrap {
+	width: 1080px;
+	margin-right: 0px;
+	overflow: hidden;
+}
+
+.laptop {
+	float: left;
+	width: 300px;
+	margin-right: 40px;
+}
+
+.laptop img {
+	height: 200px;
+	width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
