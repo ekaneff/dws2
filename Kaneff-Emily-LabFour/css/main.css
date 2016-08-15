@@ -1,0 +1,1070 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color:#515151;
+	font-size: 100%;
+}
+
+#wrapper{
+	width: 90%; /* 1280 */
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* orange header bar */
+header {
+	background: #FF9B42;
+	overflow: hidden;
+	width: 100%;
+}
+
+#searchbar {
+	width: 59.565522074282%; /* 850px / 1427 */
+	margin-top: 1.751927119832%; /* 25px / 1427 */ 
+	float: left;
+}
+
+input[type=text] {
+	width: 82.352941176471%; /* 700px / 850px */ 
+	height: 30px;
+	font-size: 1.25em; /* 20px / 16px */
+	border-radius: 2px;
+	border: none;
+	padding: .714285714286%; /* 5px / 700px */
+	margin-left: 3.529411764706%; /* 30 / 850 */
+}
+
+.button {
+	background-color: #0FA3B1;
+	/* width: 81.2934px */
+	padding: 9px;
+	display: inline;
+	color: whitesmoke;
+	border-radius: 2px;
+	font-size: 1.25em; 
+}
+
+.button:hover{
+	background: #277077;
+	cursor: pointer;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #0FA3B1;
+	width: 12.263489838823%; /* 175 / 1427 */
+}
+
+#logo
+{
+	float: left;
+	margin-left: 5.956552207428%; ;
+}
+
+h1 > span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #515151;
+}
+
+h2, #cart {
+	display: inline;
+}
+/* some adjuestments */
+
+section
+{
+	display: inline-block;
+}
+
+section:first-child > img
+{
+	width: 40%;
+	float: left;
+}
+
+#deal_details
+{
+	float: right;
+	width: 56.153846153846%; /* 365 / 650 */
+	margin-right: .769230769231%; /* 5 / 650 */
+}
+
+p a { 
+	text-decoration: none;
+	/*color: #717C89;*/
+	color: whitesmoke;
+}
+
+h2 a {
+	font-size: .83333em; /* 20 / 24 */
+	margin-right: 15%; /* 30 / 200 */
+	text-decoration: none;
+	/*color: #717C89;*/
+	color: #515151;
+}
+
+.search{
+	float: left;
+	width: 14.015416958655%; /* 200 / 1427 */
+	margin-top: 1.401541695865%; /* 20 / 1427 */
+	text-align: center;
+}
+
+.search h2 {
+	vertical-align: super;
+}
+
+/* nav styling */
+
+.active {
+	border-top: 6px solid #0FA3B1;
+	line-height: 30px;
+}
+
+nav {
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px solid #515151;
+	height: 42px;
+	width: 89.698668535389%; /* 1280 / 1427 */
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 79.6875%; /* 1020px / 1280 */
+}
+
+li {
+	float: left;
+	padding-left: 20px; /* 20 / 127  this conversion breaks the entire nav*/
+	text-align: center;
+	line-height: 40px;
+	margin-left: 6.8627450908039%; /* 70 / 1020 */
+	width: auto;/* 12.450980392157%  127 / 1020 */
+}
+
+li a {
+	text-decoration: none;
+	display: block;
+	color: #515151;
+}
+
+li a:hover {
+	border-top: 6px solid #0FA3B1;
+	line-height: 30px;
+}
+
+li a:last-child
+{
+	width: 110%;
+}
+
+/* ads styling */
+
+section#deals {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+	margin-bottom: 2.34375%; /* 30 / 1280 */
+}
+
+section > img {
+	float: left;
+}
+
+img + div {
+	width: 56%; /* 350 / 1282.5  27.29044834308%*/
+	margin-top: 20px;
+	float: left;
+}
+
+p > span {
+	font-weight: 600;
+	color: #FF9B42;
+}
+
+#dow {
+	border-right: 1px solid #515151;
+	width: 50.78125%; /* 650 / 1280 */
+}
+
+#ads {
+	margin-top: 3.125%; /* 40 / 1280 */
+	overflow: hidden;
+	width: 38.28125%; /* 490 / 1280 */
+	margin-left: 1.5625%; /* 20 / 1280 */
+}
+
+#ads img {
+	float: left;
+	margin-bottom: 3.191489361702%; /* 15 / 470 */
+
+}
+
+/* featured styling */
+
+section#featured {
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 1.5625%; /* 20 / 1280 */
+	overflow: hidden;
+}
+
+section#featured h3 {
+	padding-bottom: .390625%; /* 5 / 1280 */
+	border-bottom: 1px solid #515151;
+}
+
+section > article {
+	width: 23.4375%; /* 300 / 1280 */
+	float: left;
+	padding: .78125%; /* 10 / 1280 */
+	margin-right: 7.8125%; /* 100 / 1280 */
+}
+ 
+.listPrice {
+	color: #EC0B43;
+	text-decoration: line-through;
+}
+
+.youPay {
+	color: #FF9B42;
+}
+
+article h5 {
+	font-size: 1em;
+	margin: 0%;
+}
+
+article h5:last-of-type {
+	margin-bottom: 15px;
+}
+
+#featured article img {
+	height: 100%;
+	width: 100%; 
+}
+
+h4 ~ p {
+	font-size: .75em;
+}
+
+
+/* footer styling */
+
+footer section {
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+	background-color: #515151;
+	color: whitesmoke;
+	clear: both;
+	overflow: hidden;
+}
+
+.foot {
+	float: left;
+	width: 14.015416958655%; /* 200 / 1427 */
+	overflow: hidden;
+	margin-left: 2.102312543798%; /* 30 / 1427 */ 
+}
+
+.foot h6 {
+	font-size: .75em; /* 12px */
+	margin-bottom: 2.5%; /* 5 / 200 */
+}
+
+.foot p a {
+	font-size: .625em; /* 10px */
+}
+
+.foot p {
+	margin: 2.5%; /* 5 / 200 */
+}
+
+.footImg {
+	width: 14.015416958655%; /* 200 / 1427 */
+	float: right;
+	overflow: hidden;
+}
+
+.footImg img {
+	float: left;
+	width: 16%; /* 32 / 200 */
+	height: 16%;
+	padding-top: 25%; /* 50 / 200 */
+	margin-right: 15%; /* 30 / 1427 */
+}
+
+/* breadbrumbs */
+
+#breadcrumbs a {
+	color: #FF9B42;
+	font-size: .813em;
+}
+
+/* aside styling */
+
+aside {
+	float: left;
+	width: 15.625%; /* 200 / 1280 */
+}
+
+aside h3 {
+	border-bottom: 1px solid #515151;
+	padding-bottom: 2.495221650539%; /* 5 / 200.383 */
+	margin-top: 0%;
+}
+
+aside p a {
+	color: #0FA3B1;
+	font-size: 1em;
+}
+
+aside p a:hover {
+	text-decoration: underline;
+	padding-bottom: 2.5%; /* 5 / 200 */
+}
+
+/*brand selection*/
+
+#brandSelection {
+	overflow: hidden;
+	width: 82.8125%; /* 1060 / 1280 */
+}
+
+.brand {
+	overflow: hidden;
+	width: 30.5555%; /* 330 / 1080 */
+	margin-right: 0%;
+}
+
+.brand img {
+	height: 42.424242%; /* 140 / 330 */
+	width: 100%; /* USE PHOTOSHOP */
+	margin-bottom: 6.0606060606%; /* 20 / 330 */
+}
+
+.brand:first-of-type {
+	margin-left: .9259259%; /* 10 / 1080 */
+}
+
+/* All laptops */
+
+#allLaptops {
+	overflow: hidden;
+	width: 82.8125%; /* 1060 / 1280 */
+/*	margin: 0 auto;
+	width: 1080px;
+*/}
+
+#allLaptops h3 {
+	width: 100%;
+	border-bottom: 1px solid #515151;
+	float: left;
+	margin-left: 1.851851851%; /* 20 / 1080 */
+	margin-top: 4.629629629%; /* 50 / 1080 */ 
+	padding-bottom: .4629629%; /* 5 / 1080 */
+}
+
+.laptop {
+	float: left;
+	width: 27.7777%; /* 300 / 1080 */
+	margin-right: 2.7777%; /* 30 / 1080 */
+	padding-left: 1.851851851%; /* 20 / 1080 */
+}
+
+.laptop img {
+	height: 66.6666%; /* 200 / 300 */
+	width: 66.6666%;
+}
+
+h4 a {
+	color: #515151;
+	text-decoration: none;
+}
+
+h4 a:hover {
+	padding-bottom: 5px; /* how??? */
+	text-decoration: underline;
+}
+
+/*details page*/
+
+
+#contentWrap {
+	width: 82.8125%; /* 1060 / 1280 */
+	margin-left: 15.625%; /* 200 / 1280 */
+	overflow: hidden; 
+}
+
+#landingContent img {
+	float: left;
+	height: 37.735849056604%; /* 400 / 1060 */
+	width: 37.735849056604%;
+	margin-right: 1.88679245283%; /* 20 / 1060 */
+}
+
+#overview {
+	width: 47.169811320755%; /* 500 / 1060 */
+	margin-top: 7.7.075471698113%; /* 75 / 1060 */
+	float: left;
+}
+
+#overview h4 {
+	font-size: 1.250em; /* 20px */
+}
+
+#overview p {
+	font-size: 1em;
+	margin-bottom: 1.428571428571%; /* 5 / 350 */
+}
+
+#overview h5 {
+	margin-bottom: 8.571428571429%; /* 30 / 350 */
+	font-size: 1.250em;
+}
+
+.numbers {
+	color: #515151;
+	font-weight: 600;
+}
+
+#productAndSpecs {
+	width: 100%;
+	overflow: hidden;
+}
+
+#productDetails {
+	width: 100%
+}
+
+#productDetails li {
+	width: 100%;
+	text-align: left;
+	margin-left: .471698113208%; /* 5 / 1060 */
+	float: none;
+	padding-left: 0%;
+	line-height: 30px;
+}
+
+.bold {
+	font-weight: 600;
+	color: #FF9B42;
+}
+
+#productDetails h3 {
+	border-bottom: 1px solid #515151;
+	padding-bottom: .471698113208%; /* 5 / 1060 */
+	width: 100%;
+}
+
+#specs {
+	width: 100%;
+}
+
+#specs table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th {
+	text-align: left;
+	background: rgba(255, 155, 66, .80);
+	padding: 5px;
+	font-size: 1.25em;
+}
+
+table td {
+	padding: 10px;
+}
+
+table td:first-of-type {
+	border-right: 1px solid #515151;
+}
+
+
+#specs h3 {
+	border-bottom: 1px solid #515151;
+	padding-bottom: 5px;
+}
+
+
+/* media queries 
+======================================= */
+
+@media screen and (min-width: 856px) and (max-width: 1147px) {
+
+	/* header */
+	h1 {
+		font-size: 1.563em; /* 30px */
+	}
+
+	#logo {
+		margin-left: 1.743679163034%; /* 20 / 1147 */
+	}
+
+	/* searchbar container */
+	#searchbar {
+		width: 65.387968613775%; /* 750 / 1147 */
+		margin: 15px auto;
+		margin-left: .871839581517%; /* 10 / 1147 */
+	}
+
+	#searchbar p {
+		font-size: 1em;
+	}
+
+	/* sign in button and cart */
+	.search {
+		padding: 5px;
+	}
+
+	.search h2 {
+		font-size: 1.25em;
+	}
+
+	/* actual search bar input field */
+
+	input[type=text] {
+		width: 80%; /* 600px / 750px */ 
+		font-size: 1em; /* 16px */
+		padding: .714285714286%; /* 5px / 600px */
+	}
+
+	/* navigation */
+
+	nav {
+		width: 90%; /* 850 px */
+	}
+
+	nav ul {
+		width: 80%; /* 680 / 850 */
+		font-size: 1em;
+	}
+
+	nav li {
+		padding-left: 20px; 
+		text-align: center;
+		margin-left: 30px;
+		width: auto;
+	}
+
+	/* deal of the week */
+
+	#dow .button {
+		font-size: 1em;
+	}
+
+	/* footer */
+	.footImg {
+		width: 26.15518744551%; /* 300 / 1147 */
+	}
+
+	.footImg {
+		width: 20%;
+		height: 20%;
+	}
+
+	/* breand buttons */
+
+	.brand .button {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 690px) and (max-width: 857px) {
+
+	#logo {
+		margin-left: 1.750291715286%; /* 15 / 857 */
+	}
+
+	/* searchbar container */
+	#searchbar {
+		float: none;
+		display: block;
+		width: 650px; 
+		margin: 1.750291715286% auto; /* 15 / 857 */
+		margin-left: 0%; 
+	}
+
+	#searchbar p {
+		font-size: 1em;
+	}
+
+	/* sign in button and cart */
+	.search {
+		float: right;
+		display: block;
+		width: 17.502917152859%; /* 150 / 857 */
+		margin-right: 4.667444574096%; /* 40 / 857 */
+	}
+
+	.search h2 {
+		font-size: 1.25em;
+	}
+
+	/* actual search bar input field */
+
+	input[type=text] {
+		float: none;
+		width: 80%; /* 600px / 750px */ 
+		font-size: 1em; /* 16px */
+		padding: .714285714286%; /* 5px / 600px */
+		margin-left: 0%; /* 15 / 857 */
+	}
+
+	/* navigation */
+
+	nav {
+		width: 90%; /* 771.3 px */
+	}
+
+	nav ul {
+		width: auto;
+		font-size: 1em;
+	}
+
+	nav li {
+		padding-left: 1.945525291829%; /* 15 / 771.3 */
+		text-align: center;
+		margin-left: 2.593024763386%; /* 20 / 771.3 */
+		width: auto;
+
+	}
+
+	/* deal of the week 
+	=====================================*/
+	#dow {
+		width: auto;
+		border: none;
+		margin-left: 11.668611435239%; /* 100 / 857 */
+	}
+	#dow .button {
+		font-size: 1.25em;
+	}
+
+	#dow img {
+		float: none;
+		width: auto;
+		margin-left: 17.502917152859%; /* 150 / 857 */
+	}
+
+	#deal_details {
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+
+	/* ads 
+	========================================*/
+
+	#ads {
+		width: auto;
+		border-left: 0px;
+	}
+
+	#ads img {
+		float: left;
+		width: 46.674445740957%; /* 400 / 857 */
+	}
+
+	/* footer 
+	=========================================*/
+	.foot {
+		width: 100px;
+	}
+
+	.footImg {
+		width: 35.005834205718%; /* 300 / 857 */
+	}
+
+	.footImg {
+		width: 30%;
+		height: 30%;
+	}
+
+
+	/* breadcrumbs 
+	==========================================*/
+
+	#breadcrumbs {
+		display: none;
+	}
+
+	/* aside 
+	===========================================*/
+	aside {
+		float: none;
+		width: auto;
+		overflow: hidden;
+	}
+
+	aside h3 {
+		font-size: 1em;
+		padding-bottom: 0%;
+		border-bottom: none;
+		margin: 0;
+		margin-top: 1.166861143524%; /* 10 / 857 */
+	}
+
+	aside p {
+		float: left;
+		padding-right: 10px;
+		font-size: .9em;
+	}
+
+	aside p a {
+		color: #0FA3B1;
+		margin: 0;
+	}
+
+	aside p a:hover {
+		text-decoration: underline;
+		padding-bottom: 2.5%; /* 5 / 200 */
+	}
+
+	/* brands
+	==========================================*/
+
+	.brand {
+		float: none;
+		width: auto;
+		margin: 0 auto;
+		margin-bottom: 2.333722287048%; /* 20 / 857 */
+	}
+	.brand .button {
+		font-size: 1.25em;
+	}
+
+	/* all laptops 
+	===========================================*/
+
+	.laptop {
+		float: none;
+		width: auto;
+	}
+
+	.laptop h4, .laptop h5 {
+		font-size: 1.25em;
+	}
+
+	.laptop p {
+		font-size: 1em;
+	}
+
+	/* laptop details 
+	============================================*/
+
+	#contentWrap {
+		margin: 0;
+		width: auto;
+	}
+
+	#landingContent {
+		width: auto;
+	}
+
+	#landingContent img {
+		float: none;
+		width: 350px;
+		height: 350px;
+	}
+
+	#overview {
+		float: none;
+		width: auto;
+		margin-bottom: 40px;
+	}
+
+	#overview .button {
+		margin-top: 0;
+	}
+
+	#overview h5 {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 690px) {
+
+	#logo {
+		margin-left: 1.750291715286%; /* 15 / 857 */
+	}
+
+	/* searchbar container */
+	#searchbar {
+		float: none;
+		display: block;
+		width: auto; /* 300 / 340 */ 
+		margin: 1.750291715286% auto; /* 15 / 340 */
+		margin-left: 0%; 
+	}
+
+	#searchbar p {
+		font-size: 1em;
+	}
+
+	#searchbar .button {
+		display: none;
+	}
+
+	/* sign in button and cart */
+	.search {
+		float: none;
+		display: block;
+		width: 43.415340086831%; /* 300 / 691 */
+		margin-right: 4.667444574096%; /* 40 / 857 */
+	}
+
+	.search h2 {
+		font-size: 1.25em;
+	}
+
+	/* actual search bar input field */
+
+	input[type=text] {
+		float: none;
+		width: 80%; /* 600px / 750px */ 
+		font-size: 1em; /* 16px */
+		padding: .714285714286%; /* 5px / 600px */
+		margin-left: 0%; /* 15 / 857 */
+	}
+
+	/* navigation */
+
+	nav {
+		width: auto;
+		height: auto; /* 771.3 px */
+	}
+
+	nav ul {
+		width: auto;
+		font-size: 1em;
+	}
+
+	nav li {
+		padding-left: 1.945525291829%; /* 15 / 771.3 */
+		text-align: left;
+		margin-left: 2.593024763386%; /* 20 / 771.3 */
+		width: auto;
+		float: none;
+	}
+
+	nav li a:hover {
+		border: none;
+		line-height: 40px;
+	}
+
+	.active {
+		border-top: 0px;
+		color: #0FA3B1;
+		font-style: italic;
+		line-height: 40px;
+	}
+
+
+	/* deal of the week 
+	=====================================*/
+	#dow {
+		width: auto;
+		border: none;
+		margin-left: 0%;
+	}
+	#dow .button {
+		font-size: 1.25em;
+	}
+
+	#dow img {
+		float: none;
+		width: auto;
+		margin-left: 0%; 
+	}
+
+	#deal_details {
+		float: none;
+		width: auto;
+		text-align: left;
+	}
+
+	/* ads 
+	========================================*/
+
+	#ads {
+		width: auto;
+		border-left: 0px;
+	}
+
+	#ads img {
+		float: none;
+		width: auto; 
+	}
+
+	/* featured 
+	=========================================*/
+
+	#featured article {
+		float: none;
+		width: auto;
+	}
+
+	/* footer 
+	=========================================*/
+	.foot {
+		width: auto;
+		float: none;
+	}
+
+	.foot h6 {
+		font-size: 1.25em;
+	}
+
+	.foot p {
+		font-size: 1.25em;
+	}
+
+	.footImg {
+		width: auto;   
+		float: none;
+		margin-bottom: 2.898550724638%; /* 20 / 690 */
+	}
+
+	.footImg img {
+		width: 14.492753623188%; /* 100 / 690 */ 
+		height: 14.492753623188%;
+	}
+
+
+	/* breadcrumbs 
+	==========================================*/
+
+	#breadcrumbs {
+		display: none;
+	}
+
+	/* aside 
+	===========================================*/
+	aside {
+		float: none;
+		width: auto;
+		overflow: hidden;
+	}
+
+	aside h3 {
+		font-size: 1.25em;
+		padding-bottom: 0%;
+		border-bottom: none;
+		margin: 0;
+		margin-top: 1.166861143524%; /* 10 / 690 */
+	}
+
+	aside p {
+		float: left;
+		margin-right: 10px;
+		font-size: .9em;
+	}
+
+	aside p a {
+		color: #0FA3B1;
+		margin: 0;
+	}
+
+	aside p a:hover {
+		text-decoration: underline;
+		padding-bottom: 2.5%; /* 5 / 200 */
+	}
+
+	/* brands
+	==========================================*/
+
+	.brand {
+		float: none;
+		width: auto;
+		margin: 0 auto;
+		margin-bottom: 2.898550724638%; /* 20 / 690 */
+	}
+	.brand .button {
+		font-size: 1.25em;
+	}
+
+	/* all laptops 
+	===========================================*/
+
+	.laptop {
+		float: none;
+		width: auto;
+	}
+
+	.laptop img {
+		width: auto;
+	}
+
+	.laptop h4, .laptop h5 {
+		font-size: 1.25em;
+	}
+
+	.laptop p {
+		font-size: 1em;
+	}
+
+	/* laptop details 
+	============================================*/
+
+	#contentWrap {
+		margin: 0;
+		width: auto;
+	}
+
+	#landingContent {
+		width: auto;
+	}
+
+	#landingContent img {
+		float: none;
+		width: auto;
+		height: auto;
+	}
+
+	#overview {
+		float: none;
+		width: auto;
+		margin-bottom: 40px;
+	}
+
+	#overview .button {
+		margin-top: 0;
+		font-size: 1.25em;
+	}
+
+	#overview h5 {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+	#productDeatils ul {
+		list-style: none;
+	}
+}
+
+
+
+
+
