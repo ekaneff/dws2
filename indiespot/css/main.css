@@ -107,12 +107,12 @@ img {
 	background: #FED766;
 }
 
-/* now playing 
+/* intro
 ==============================*/
 
 #intro {
 	text-align: center;
-	padding-top: 170px;
+	padding-top: 11.80555556%; /* 170 / 1440 */
 	background-image: url('../images/introBg.png');
 	height: 400px;
 }
@@ -266,12 +266,12 @@ aside h2 {
 
 img[src*=feature-lights]{
 	height: 7.5%;
-	width: 30%; /* 300 / 1000 */
-	margin-top: 2%; /* 200 / 1000 */
+	width: 28.57142857%; /* 200 / 700 */
+	margin-top: 2%; /* 200 / 700 */
 }
 
 #feature .container {
-	width: 700px;
+	width: 48.61111111%; /* 700 / 1440 */
 	margin: auto;
 }
 
@@ -280,10 +280,6 @@ img[src*=feature-lights]{
 	padding-bottom: .8333333333%; /* 5 / 600 */
 	border-bottom: 2px solid #494949;
 	width: 60%; /* 600 / 1000 */
-}
-
-#feature .synp {
-	width: 700px;
 }
 
 #feature h3 {
@@ -318,9 +314,15 @@ p span {
 ==============================*/
 
 #event .container {
-	width: 700px;
+	width: 48.61111111%; /* 700 / 1440 */
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 1.388888889%; /* 20 / 1440 */
+}
+
+#event img {
+	height: 7.142857143%; /* 50 / 700 */
+	width: 57.14285714%; /* 400 / 700 */
+	margin-top: 2%; 
 }
 
 #event h2 {
@@ -330,16 +332,237 @@ p span {
 	width: 100%; 
 }
 
+#movieList h3 {
+	color: #B02E0C;
+	font-size: 2em;
+	margin-top: 0;
+	padding-bottom: .4721435316%; /* 5 / 1059 */
+	border-bottom: 2px solid #494949;
+}
+
 .movieCard img {
-	width: 279px;
 	margin: 0;
 	float: left;
-	margin-right: 20px;
+	margin-right: 2.298850575%; /* 20 / 870 */
+}
+
+.movieCard h4 {
+	margin-top: 0;
+	font-size: 1.25em;
+	color: #B02E0C;
 }
 
 .movieCard {
 	overflow: hidden;
-	margin-bottom: 50px;
+	margin-bottom: 4.721435316%; /* 50 / 1059 */
+	width: 82.1529745%; /* 870 / 1059 */
+}
+
+
+/* media queries 
+====================================*/
+
+@media screen and (min-width: 660px) and (max-width: 986px) {
+
+	#events .container {
+		width: auto;
+		margin: auto;
+	}
+
+	#events img {
+		float: none; 
+	}
+
+	#eventCard {
+		width: 40.56795132%; /* 400 / 986 */
+		margin: 0 auto;
+		margin-bottom: 3.042596349%; /* 30 / 986 */
+	}
+
+	.info {
+		float: none;
+		width: auto;
+	}
+
+	#aside {
+		float: none;
+		width: auto;
+	}
+
+	aside {
+		text-align: left;
+		background: none; 
+	}
+
+	aside ul {
+		width: auto;
+		background:rgba(254, 215, 102, .7);
+	}
+
+	aside a {
+		line-height: 40px;
+		font-size: 1.15em;
+	}
+
+	#feature h2 {
+		width: auto;
+	}
+
+	#reviews {
+		display: none;
+	}
+
+	#feature .container {
+		width: auto; 
+		margin-left: 30px;
+	}
+
+	#event .container {
+		width: auto; 
+		margin-left: 30px;
+	}
+
+	#movieList .container {
+		width: auto; 
+		margin-left: 30px;
+	}
+
+	.movieCard img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 661px) {
+
+	h1 {
+		width: 200px;
+		float: none;
+		margin-left: 20px;
+	}
+
+	header {
+		padding-bottom: 10px;
+		border-bottom: 2px solid #494949;
+	}
+
+	nav {
+		float: none;
+		width: auto; 
+	}
+
+	nav ul {
+		float: none;
+		list-style: none;
+	}
+
+	nav li {
+		float: left;
+		width: 110px;
+	}
+
+	#npCard {
+		width: auto;
+		float: none;
+		margin-bottom: 50px;
+	}
+
+	#nowPlaying article:last-child {
+		margin-left: 0; 
+	}
+
+	#eventCard {
+		margin-bottom: 30px; /* 30 / 986 */
+	}
+
+	.info {
+		width: auto;
+	}
+
+	footer article {
+		float: none;
+	}
+
+	footer article:last-of-type {
+		float: none;
+		text-align: left;
+		margin-right: 0; 
+	}
+
+	#topImg {
+		display: none;
+	}
+
+	#aside {
+		float: none;
+		width: auto;
+	}
+
+	aside {
+		text-align: left;
+		background: none; 
+	}
+
+	aside ul {
+		width: auto;
+		background:rgba(254, 215, 102, .7);
+	}
+
+	aside a {
+		line-height: 40px;
+		font-size: 1.15em;
+	}
+
+	#reviews {
+		display: none;
+	}
+
+	.container img {
+		height: auto;
+		width: auto;
+	}
+
+	#feature h2 {
+		width: auto;
+		font-size: 2.5em;
+	}
+
+	#reviews {
+		display: none;
+	}
+
+	#feature .container {
+		width: auto; 
+		margin: 0 20px 0 20px;
+	}
+
+	#event img {
+		height: auto;
+		width: auto;
+	}
+
+	#event h2 {
+		width: auto;
+		font-size: 2.5em;
+	}
+
+	#event .container {
+		width: auto; 
+		margin: 0 20px 0 20px;
+	}
+
+	#movieList .container {
+		width: auto; 
+		margin: 0 20px 0 20px;
+	}
+
+	.movieCard img {
+		display: none;
+	}
+
+	iframe {
+		width: auto;
+	}
+
 }
 
 
