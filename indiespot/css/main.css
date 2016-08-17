@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
-	color: #454545;
+	color: #494949;
 }
 
 h1, h2 {
@@ -12,13 +12,18 @@ h1, h2 {
 
 header {
 	overflow: hidden;
-	background: #454545;
 }
 
 h1 {
 	float: left;
-	color: whitesmoke;
+	color: #009FB7;
 	margin-left: 2.102312544%; 
+}
+
+h2 {
+	font-size: 3em;
+	color: #B02E0C;
+	text-align: center;
 }
 
 nav {
@@ -41,24 +46,25 @@ nav li {
 nav li a {
 	text-align: center;
 	text-decoration: none;
-	color: whitesmoke;
+	color: #494949;
 	display: block;
 	padding: 32px 20px;
+	-webkit-transition: background .5s; /* Safari */
+    transition: background .5s;
+}
+
+li a:hover {
+	background: #FED766;
 }
 
 img {
 	max-width: 100%;
 }
 
-#tix {
-	background: #FF9F1C;
-	color: #515151;
-}
-
 .button {
 	width: 100px;
 	padding: 10px; /* 10 / 100 */
-	background: #FF9F1C;
+	background: #FED766;
 	font-size: 1.25em;
 	border-radius: 5px;
 	color: #515151;
@@ -69,11 +75,10 @@ img {
 }
 
 .button:hover {
-	background:#454545;
-	color: whitesmoke;
+	background: #b8d5b8;
 }
 
-#container {
+.container {
 	width: 73.580939032936%; /* 1050 / 1427 */
 	margin: 0 auto;
 	overflow: hidden;
@@ -84,18 +89,27 @@ img {
 /* now playing 
 ==============================*/
 
+#intro {
+	text-align: center;
+	padding-top: 170px;
+	background-image: url('../images/introBg.png');
+	height: 400px;
+}
+
+#intro p {
+	font-size: 1.5em;
+}
+
+/* now playing 
+==============================*/
+
 #nowPlaying {
 	overflow: hidden;
+	background-color: #FFA69E;
 }
 
 #nowPlaying .button {
 	margin: 0 auto;
-}
-
-#nowPlaying h2 {
-	text-align: center;
-	color: #DE1A1A;
-	font-size: 3em;
 }
 
 #npCard {
@@ -110,7 +124,7 @@ img {
 
 #nowPlaying h3 {
 	font-size: 2em;
-	color: #DE1A1A;
+	color: #B02E0C;
 	font-weight: 600;
 	font-style: italic;
 }
@@ -118,15 +132,14 @@ img {
 /* events 
 ==============================*/
 
-#events h2 {
-	text-align: center;
-	color: #DE1A1A;
-	font-size: 3em;
+#events {
+	background-image: url('../images/eventBg.png');
 }
 
 #eventCard {
 	overflow: hidden;
-	margin-bottom: 50px;
+	margin-bottom: 4.761904762%; /* 50 / 1050 */
+
 }
 
 #events img {
@@ -142,7 +155,7 @@ img {
 }
 
 .info h3 {
-	color: #DE1A1A;
+	color:  #B02E0C;
 	font-size: 1.5em;
 }
 
@@ -151,7 +164,6 @@ img {
 
 footer {
 	overflow: hidden;
-	background: #e7e7e7;
 	font-style: italic;
 }
 
@@ -164,6 +176,10 @@ footer article:last-of-type {
 	float: right;
 	text-align: right;
 	margin-right: 2.102312544%; 
+}
+
+footer article h4 {
+	color: #B02E0C;
 }
 
 
