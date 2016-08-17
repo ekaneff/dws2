@@ -34,10 +34,12 @@ h2 {
 
 nav {
 	float: right;
-	width: 21.02312544%; /* 300 */
+	width: 42.04625088%; /* 600 */
+	overflow: hidden;
 }
 
 nav ul {
+	float: right;
 	list-style: none;
 	padding: 0;
 	overflow: hidden;
@@ -80,6 +82,13 @@ img {
     transition: background .5s;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
+}
+
+.button a {
+	color: #494949;
+	text-decoration: none;
+	display: block;
 }
 
 .button:hover {
@@ -92,6 +101,10 @@ img {
 	overflow: hidden;
 	padding-bottom: 2.857142857%; /* 30 / 1050 */
 	
+}
+
+.active {
+	background: #FED766;
 }
 
 /* now playing 
@@ -171,6 +184,12 @@ img {
 	font-size: 1.5em;
 }
 
+.info h3 a {
+	text-decoration: none;
+	display: block;
+	color: #B02E0C;
+}
+
 /* footer
 ==============================*/ 
 
@@ -209,13 +228,13 @@ footer article h4 {
 	float: right;
 	width: 23.47582341%; /* 335 / 1427 */
 	margin-top: 1.401541696%; /* 20 / 1427 */
-	margin-right: 1.401541696%; /* 20 / 1427 */
+	margin-right: 3.50385424%; /* 50 / 1427 */
 }
 
 aside {
 	padding: 4.47761194%; /* 15 / 335 */
 	text-align: left;
-	background: rgba(254, 215, 102, .4); 
+	background: rgba(254, 215, 102, .7); 
 }
 
 aside ul {
@@ -251,6 +270,11 @@ img[src*=feature-lights]{
 	margin-top: 2%; /* 200 / 1000 */
 }
 
+#feature .container {
+	width: 700px;
+	margin: auto;
+}
+
 #feature h2 {
 	text-align: left;
 	padding-bottom: .8333333333%; /* 5 / 600 */
@@ -260,10 +284,6 @@ img[src*=feature-lights]{
 
 #feature .synp {
 	width: 700px;
-}
-
-#feature .container {
-	width: 1000px;
 }
 
 #feature h3 {
@@ -294,7 +314,33 @@ p span {
 	font-size: .8em
 }
 
+/* events page
+==============================*/
 
+#event .container {
+	width: 700px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#event h2 {
+	text-align: left;
+	padding-bottom: .8333333333%; /* 5 / 600 */
+	border-bottom: 2px solid #494949;
+	width: 100%; 
+}
+
+.movieCard img {
+	width: 279px;
+	margin: 0;
+	float: left;
+	margin-right: 20px;
+}
+
+.movieCard {
+	overflow: hidden;
+	margin-bottom: 50px;
+}
 
 
 
