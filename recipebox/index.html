@@ -8,28 +8,73 @@
   		<link rel="stylesheet" href="css/main.css">
 		<title>RecipeBox</title>
 	</head>
-	<body data-spy="scroll" data-target=".navbar-default" data-offset="50">
+	<body>
 
-	<nav class="navbar navbar-default" data-spy="affix" data-offset="550" role="navigation">
+
+	<nav class="navbar navbar-default" role="navigation">
 	    <div class="container">
 	      <div class="navbar-header">
-	        <a class="navbar-brand" href="index.html">RecipeBox</a>
+	      	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu">
+	      		<span class="icon-bar"></span>
+	      		<span class="icon-bar"></span>
+	      		<span class="icon-bar"></span>
+	      	</button>
+
+	        <!-- <a class="navbar-brand" href="index.html">RecipeBox</a> -->
+
+	      </div>
+
+	         <div class="collapse navbar-collapse" id="collapsemenu">
+		        <ul class="nav navbar-nav navbar-right">
+		          <li><a href="#">Shop Online</a></li>
+		          <li><a href="recipies.html">Recipes</a></li>
+		          <li><a href="#">Meal Plans</a></li>
+		          <li><button type="button" class="btn btn-primary navbar-btn"
+		          data-toggle="modal" data-target="#signin">Sign in / Register
+		          </button></li>
+		        </ul>
 	        </div>
-	        <ul class="nav navbar-nav navbar-right">
-	          <li><a href="#mission">Shop Online</a></li>
-	          <li><a href="#services">Recipes</a></li>
-	          <li><a href="#staff">Meal Plans</a></li>
-	          <li><button type="button" class="btn btn-primary navbar-btn">Sign in / Register</button></li>
-	        </ul>
 	    </div><!-- container -->
   	</nav>
+
+	 <!-- modal -->
+
+	 <div class="modal fade" id="signin" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      <button type="button" class="close" data-dismiss="modal">
+	        <span>&times;</span>
+	      </button>
+	        <h3 class="modal-title" id="modalLabel">Sign in / Register</h3>
+	        <div class="modal-body">
+	          <form>
+	          	<div class="form-group">
+		          	<label for="username">Username</label>
+		          	<input class="form-control" type="text" id="username" placeholder="Ex. johndoe or johndoe@yahoo.com">
+	          	</div>
+
+	          	<div class="form-group">
+		          	<label for="password">Password</label>
+		          	<input class="form-control" type="text" id="password" placeholder="Password">
+	          	</div>
+
+	          	<input class ="btn btn-primary" type="submit" value="Sign in">
+
+	          	<p class="form-group">Not a member? <a href="#">Sign up here</a></p>
+	          </form>
+	        </div> <!--modal body -->
+	      </div> <!-- modal header -->
+	    </div> <!-- modal content -->
+	  </div> <!-- modal dialog -->
+	</div> <!-- modal -->
 
 	<header class="bgimage">
 		<div class="container">
 			<div class="bgcontainer">
 				<h1 class="text-center">RecipeBox</h1>
 				<form class="form-inline text-center">
-					<input type="text" class="form-control input-lg" placeholder="Search for respices or products">
+					<input type="text" class="form-control input-lg" placeholder="Search for recipies, products and mealplans">
 					<button type="button" class="btn btn-default btn-lg" id="go">Go</button>
 				</form>
 				<p class="text-center">Shop for goods, find recipies and create meal plans to begin your healthy living journey</p>
@@ -42,17 +87,17 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<img src="images/shop.jpg" class="center-block">
-				<h2 id="shop">Shop</h2>
+				<h2 id="shop" class="text-center">Shop</h2>
 				<p>Shop our online store for a wide variety of all organic products. Have items delivered directly to your door, or find where they can be found in a store near you.</p>
 			</div>
 			<div class="col-sm-4">
 				<img src="images/eat.jpg" class="center-block">
-				<h2 id="eat">Eat</h2>
+				<h2 id="eat" class="text-center">Eat</h2>
 				<p>Cook something you and the whole family can enjoy using nothin gbut the best and most fresh products out there. Being organic does not mean you have to sacfrafise flavor!</p>
 			</div>
 			<div class="col-sm-4">
 				<img src="images/share.jpg" class="center-block">
-				<h2 id="share">Share</h2>
+				<h2 id="share" class="text-center">Share</h2>
 				<p>Share your favorite recipes or search for ideas through our recipes page! Crete custom meal plans that you and the community can enjoy as well on their journey to a healthier lifestyle.</p>
 			</div>
 		</div>
@@ -81,6 +126,7 @@
 		</div>
 
 	</footer>
-
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

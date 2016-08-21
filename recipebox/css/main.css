@@ -58,10 +58,6 @@
 	border: none;
 }
 
-.navbar-btn:hover {
-	background: #337ab7;
-	color: #F3CA40;
-}
 
 h1 {
 	color: white;
@@ -76,6 +72,7 @@ h1 {
 #shop {
 	/*color: #449933;*/
 	color: #447E08;
+	text-align: center;
 }
 
 #eat {
@@ -100,6 +97,14 @@ h1 {
 	border-radius: 50%;
 }
 
+form p {
+	margin-top: 10px;
+}
+
+#signin h3 {
+	color: #337ab7;
+}
+
 footer {
 	background: #666;
 	color: white;
@@ -107,17 +112,52 @@ footer {
 
 footer a {
 	color: white;
+	
 	padding-bottom: 3px;
 }
 
 footer a:hover {
-	color: #101010;
+	color: #F3CA40;
 	text-decoration: none;
 }
 
 footer h6 {
-	font-size: 15px;
+	font-size: 17px;
+	color: white;
 }
 
+/* recipes 
+============================================*/
+
+.recipeimg {
+	background: url('../images/recipebg.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 300px;
+}
+
+.recipebg {
+	background: rgba(247, 252, 250, .7);
+	width: 300px;
+	height: 200px;
+	padding: 10px;
+}
+
+.recipebg h1 {
+	margin-top: 0;
+	color: black;
+	border-bottom: 2px dotted black;
+	padding-bottom: 5px;
+}
+
+.recipebg p {
+	font-size: 20px;
+	font-style: italic;
+}
+
+.tab-content {
+	margin-top: 20px;
+	text-align: center;
+}
 
 

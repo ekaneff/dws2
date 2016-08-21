@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="css/bootstrap.min.css">
+  		<link rel="stylesheet" href="css/main.css">
+		<title>RecipeBox</title>
+	</head>
+	<body>
+
+
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="container">
+	      <div class="navbar-header">
+	      	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu">
+	      		<span class="icon-bar"></span>
+	      		<span class="icon-bar"></span>
+	      		<span class="icon-bar"></span>
+	      	</button>
+
+	        <a class="navbar-brand" href="index.html">RecipeBox</a>
+
+	      </div>
+
+	         <div class="collapse navbar-collapse" id="collapsemenu">
+		        <ul class="nav navbar-nav navbar-right">
+		          <li><a href="#mission">Shop Online</a></li>
+		          <li><a href="#services">Recipes</a></li>
+		          <li><a href="#staff">Meal Plans</a></li>
+		          <li><button type="button" class="btn btn-primary navbar-btn"
+		          data-toggle="modal" data-target="#signin">Sign in / Register
+		          </button></li>
+		        </ul>
+	        </div>
+	    </div><!-- container -->
+  	</nav>
+
+	 <!-- modal -->
+
+	 <div class="modal fade" id="signin" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      <button type="button" class="close" data-dismiss="modal">
+	        <span>&times;</span>
+	      </button>
+	        <h3 class="modal-title" id="modalLabel">Sign in / Register</h3>
+	        <div class="modal-body">
+	          <form>
+	          	<div class="form-group">
+		          	<label for="username">Username</label>
+		          	<input class="form-control" type="text" id="username" placeholder="Ex. johndoe or johndoe@yahoo.com">
+	          	</div>
+
+	          	<div class="form-group">
+		          	<label for="password">Password</label>
+		          	<input class="form-control" type="text" id="password" placeholder="Password">
+	          	</div>
+
+	          	<input class ="btn btn-primary" type="submit" value="Sign in">
+
+	          	<p class="form-group">Not a member? <a href="#">Sign up here</a></p>
+	          </form>
+	        </div> <!--modal body -->
+	      </div> <!-- modal header -->
+	    </div> <!-- modal content -->
+	  </div> <!-- modal dialog -->
+	</div> <!-- modal -->
+
+	<header class="recipeimg">
+		<div class="container">
+			<div class="recipebg pull-right">
+				<h1>Recipies</h1>
+				<p>
+					Explore all of the recipes posted by health nuts just like you!
+				</p>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="container">
+		<ul class="nav nav-tabs" role="tablist">
+			 <li class="active" role="presentation"><a href="#recent" role="tab" data-toggle="tab">Recent</a></li>
+			 <li role="presentation"><a href="#top" role="tab" data-toggle="tab">Top Rated</a></li>
+			 <li role="presentation"><a href="#featured" role="tab" data-toggle="tab">My Recipies</a></li>
+		</ul>
+
+		<div class="tab-content">
+  			<div class="tab-pane active" id="recent">
+  				<div class="row">
+  					<div class="col-sm-4">
+  					<img src="images/recentrecp1.jpg" />
+  					<a href="#"><h4>Melted Gelato Summer Cake</h4></a>
+
+  					<p>Rating: <span>3.5 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/recentrecp2.jpg" />
+  					<a href="#"><h4>Simple Grilled Beef Short Ribs</h4></a>
+
+  					<p>Rating: <span>3.25 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/recentrecp3.jpg" />
+  					<a href="#"><h4>Lunchbox Quesadilla</h4></a>
+
+  					<p>Rating: <span>3.75 / 5</span></p>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm-4">
+  					<img src="images/recentrecp4.jpg" />
+  					<a href="#"><h4>Three-ingredient Banana Pancakes</h4></a>
+
+  					<p>Rating: <span>3.25 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/recentrecp5.jpg" />
+  					<a href="#"><h4>Zucchini Feta Pie</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/recentrecp6.jpg" />
+  					<a href="#"><h4>Easy Teriyaki Salmon Rice Bowl</h4></a>
+
+  					<p>Rating: <span>3.5 / 5</span></p>
+  					</div>
+  				</div>
+  				<nav class="text-center">
+				  <ol class="pagination text-center">
+				    <li class="active"><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				  </ol>
+				</nav>
+  			</div>
+
+  			<div class="tab-pane" id="top">
+  				<div class="row">
+  					<div class="col-sm-4">
+  					<img src="images/toprated1.jpg" />
+  					<a href="#"><h4>The New Englandah Burgah</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/toprated2.jpg" />
+  					<a href="#"><h4>Basmati Rice, Black-Eyed Peas and Sunflower Seeds</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/toprated3.jpg" />
+  					<a href="#"><h4>Ethiopian-Style Chickpea Stew</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm-4">
+  					<img src="images/toprated4.jpg" />
+  					<a href="#"><h4>Apple Sandwiches with Granola and Peanut Butter</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/toprated5.jpg" />
+  					<a href="#"><h4>Sangria</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/toprated6.jpg" />
+  					<a href="#"><h4>Chicken Breasts with Grilled Pineapple and Tomatillo Salsa</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+  				</div>
+  				<nav class="text-center">
+				  <ol class="pagination text-center">
+				    <li class="active"><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				  </ol>
+				</nav>
+  			</div>
+
+  			<div class="tab-pane" id="featured">
+  				<div class="row">
+  					<div class="col-sm-4">
+  					<img src="images/featured1.jpg" />
+  					<a href="#"><h4>Buttermilk-Blueberry Muffins</h4></a>
+
+  					<p>Rating: <span>3.25 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/featured2.jpg" />
+  					<a href="#"><h4>Beer-Glazed Salmon with Roasted Mushrooms</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/featured3.jpg" />
+  					<a href="#"><h4>Apple Pie Smoothie</h4></a>
+
+  					<p>Rating: <span>3.5 / 5</span></p>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm-4">
+  					<img src="images/featured4.jpg" />
+  					<a href="#"><h4>Roasted Spaghetti Squash with Almond Curry</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/featured5.jpg" />
+  					<a href="#"><h4>Sangria</h4></a>
+
+  					<p>Rating: <span>4 / 5</span></p>
+  					</div>
+
+  					<div class="col-sm-4">
+  					<img src="images/featured6.jpg" />
+  					<a href="#"><h4>Almond Chicken and Mango Satay</h4></a>
+
+  					<p>Rating: <span>3 / 5</span></p>
+  					</div>
+  				</div>
+  				<nav class="text-center">
+				  <ol class="pagination text-center">
+				    <li class="active"><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li><a href="#">6</a></li>
+				    <li><a href="#">7</a></li>
+				  </ol>
+				</nav>
+  			</div>
+  			
+  		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="col-sm-4">
+				<h6>Services and Support</h6>
+				<p><a href="#">Help - Email us</a></p>
+				<p><a href="#">Sales Information</a></p>
+				<p><a href="#">Product Recalls</a></p>
+			</div>
+			<div class="col-sm-4">
+				<h6>Shipping and Returns</h6>
+				<p><a href="#">Shipping Policy</a></p>
+				<p><a href="#">Online Returns</a></p>
+				<p><a href="#">Return Policy</a></p>
+				<p><a href="#">Tax Information</a></p>
+			</div>
+			<div class="col-sm-4">
+				<h6>Security and Privacy</h6>
+				<p><a href="#">Privacy Policy</a></p>
+				<p><a href="#">Terms of Use and Sale </a></p>
+			</div>
+		</div>
+
+	</footer>
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
