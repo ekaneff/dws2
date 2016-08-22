@@ -1,3 +1,10 @@
+body {
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+
 .bgimage {
 	background:
     linear-gradient(
@@ -37,7 +44,7 @@
 }
 
 .navbar-default .navbar-brand:hover {
-	color: #F3CA40;
+	color: #FF9B42;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -49,7 +56,7 @@
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: #F3CA40;
+	color: #FF9B42;
 }
 
 .navbar-btn {
@@ -58,15 +65,38 @@
 	border: none;
 }
 
+.navbar-btn:hover {
+	background: #FF9B42;
+	color: white;
+}
 
-h1 {
+.navbar-btn .btnprimary:focus {
+	background: #FF9B42;
+	color: white;
+}
+
+.navbar-brand {
+	font-family: 'Crete Round', serif;
+}
+
+
+h1, h2, h3 {
 	color: white;
 	font-size: 50px;
 	font-weight: bold;
+	font-family: 'Crete Round', serif;
 }
 
 .form-inline .form-control {
 	width: 70%;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+.modal-title {
+	font-size: 30px;
 }
 
 #shop {
@@ -86,6 +116,12 @@ h1 {
 #go {
 	background: #F3CA40;
 	border: none;
+	color: #337ab7;
+}
+
+#go:hover {
+	background: #FF9B42;
+	color: white;
 }
 
 #landing {
@@ -102,7 +138,13 @@ form p {
 }
 
 #signin h3 {
-	color: #337ab7;
+	color: #FF9B42;
+}
+
+#signin .btn-primary {
+	background: #FF9B42;
+	color: white;
+	border: none;
 }
 
 footer {
@@ -158,6 +200,38 @@ footer h6 {
 .tab-content {
 	margin-top: 20px;
 	text-align: center;
+}
+
+.nav-tabs > li.active > a {
+	color: #FF9B42;
+}
+
+.nav-tabs > li.active > a:focus {
+	color: #FF9B42;
+}
+
+.nav-tabs > li.active > a:hover {
+	background: #FF9B42;
+	color: white;
+}
+
+.nav-tabs > li > a {
+	color: #FF9B42;
+}
+
+.nav-tabs > li > a:hover {
+	background: #FF9B42;
+	color: white;
+}
+
+.tab-pane a {
+	color: #FF9B42;
+}
+
+.tab-pane p {
+	font-style: italic;
+	font-size: 14px;
+	color: #337ab7;
 }
 
 
