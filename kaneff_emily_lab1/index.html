@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Emily Kaneff PRW09</title>
+<!--Your name
+    class and date  -->
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+ <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+		<h1>ES2015 Practice</h1>
+
+		<h2>Requirements:</h2>
+		<p>Your code must be writted in ES2015 ONLY!!.Your examples must be orginal. You can not use examples from any web page. You must use an external files for both the javaScript and CSS files.Your web page must be professionally styled.</p>
+		</div>
+	</header>
+
+	<section id="q1">
+	<div class="wrapper">
+		<h2>1. Create an example using Arrow Functions.</h2>
+		<div class="code">
+		
+
+		</div>
+		<button type="button" id="q1_btn">Show Result</button> 
+	</div>
+	</section>
+
+	<section id="q2">
+	<div class="wrapper">
+		<h2>2. Create an example using Block Scope.</h2>
+		<pre>
+			var click = 0;
+
+			document.querySelector('#q2_btn').addEventListener('click', function() {
+				if (click === 0) 
+				{
+					var content = '';
+
+					let show = "Dare Devil";
+
+					if(true) {
+						let show ="Master Chef";
+						let newP = document.createElement("p");
+						content = document.createTextNode(show);
+						newP.appendChild(content);
+						document.getElementById("q2").appendChild(newP);
+						click++;
+					}
+
+					let newP = document.createElement("p");
+					content = document.createTextNode(show);
+					newP.appendChild(content);
+					document.getElementById("q2").appendChild(newP);
+					click++;
+				}
+			});
+		</pre>
+		<button type="button" id="q2_btn">Show Result</button>
+	</div>
+	</section>
+
+	<section id="q3">
+	<div class="wrapper">
+		<h2>3. Create an example using Classes and Inheritance.</h2>
+		<pre>
+			<span class="comments">//original class creation</span>
+
+			var click = 0;
+
+			class Flower {
+				constructor(name, color) {
+					this.name = name;
+					this.color = color;
+				}
+
+				fullInfo() {
+					let full = `The flower is a ${this.name} and it is ${this.color}`;
+					var content = '';
+					let newP = document.createElement("p");
+					content = document.createTextNode(full);
+					newP.appendChild(content);
+					document.getElementById("q3").appendChild(newP);
+				}
+			}
+
+			var daisy = new Flower("Daisy", "white");
+
+			<span class="comments">//class inheritance</span>
+
+			class Weed extends Flower {
+				constructor() {
+					super("Dandelion", "yellow")
+				}
+			}
+
+			var dandelion = new Weed();
+
+			<span class="comments">//document output</span>
+
+			document.querySelector('#q3_btn').addEventListener('click', function() {	
+				if (click===0){
+					daisy.fullInfo();
+					dandelion.fullInfo();
+					click++;
+				}
+			});
+		</pre>
+		<button type="button" id="q3_btn">Show Result</button>
+	</div>
+	</section>
+
+	<section id="q4">
+	<div class="wrapper">
+		<h2>4. Create an example using Default Parameters.</h2>
+		<pre>
+			var click = 0;
+
+			function dragons (mood = "sad", weight = "fat", strength = "weak") {
+					let full = `You are a ${mood}, ${weight}, and ${strength} dragon.`;
+					var content = '';
+					let newP = document.createElement("p");
+					content = document.createTextNode(full);
+					newP.appendChild(content);
+					document.getElementById("q4").appendChild(newP);
+			}
+
+			document.querySelector('#q4_btn').addEventListener('click', function() {	
+				if (click===0){
+					dragons("happy", "skinny", "strong");
+					click++;
+				}
+			});
+		</pre>
+		<button type="button" id="q4_btn">Show Result</button>
+	</div>
+	</section>
+
+	<section id="q5">
+	<div class="wrapper">
+		<h2>5. Create an example using Destructured Assignment.</h2>
+		<pre>
+			var click = 0;
+
+			var clock = {
+				type: "alarm",
+				color: "red",
+				sound: "annoying"
+			};
+
+			function clocks ({type, sound}) {
+				let full = `My ${type} clock is ${sound}`;
+				var content = '';
+				let newP = document.createElement("p");
+				content = document.createTextNode(full);
+				newP.appendChild(content);
+				document.getElementById("q5").appendChild(newP);
+			}
+
+			document.querySelector('#q5_btn').addEventListener('click', function() {	
+				if (click===0){
+					clocks(clock);
+					click++;
+				}
+			});
+		</pre>
+		<button type="button" id="q5_btn">Show Result</button>
+	</div>
+	</section>
+
+	<section id="q6">
+	<div class="wrapper">
+		<h2>6. Create an example using Generators.</h2>
+		<pre>
+			var click = 0;
+
+			function* btnText() {
+				yield "Click me!";
+				yield "Click me again!";
+				yield "And again!";
+				yield "One more time!";
+				yield "Done.";
+			}
+
+			var clickBtn = btnText();
+
+			document.querySelector('#q6_btn').addEventListener('click', function() {	
+				if (click < 5 ){
+					let full = clickBtn.next().value;
+					document.getElementById("q6_btn").innerHTML = full;
+					click++;
+				}
+			});
+		</pre>
+		<button type="button" id="q6_btn">Show Result</button>
+	</div>
+	</section>
+
+	<section id="q7">
+	<div class="wrapper">
+		<h2>7. Create an example using Promises.</h2>
+		<button type="button" id="q7_btn">Show Result</button>
+	</div>
+	</section>
+
+	<section id="q8">
+	<div class="wrapper">
+		<h2>8. Create an example using Rest Parameters.</h2>
+		<pre>
+			var click = 0;
+
+			function compliments(name, ...comps) {
+				return comps.map((comps) => name + comps);
+			}
+
+			var result = compliments(" Emily is ", "awesome", "smart", "funny", "gorgeous");
+			
+			document.querySelector('#q7_btn').addEventListener('click', function() {	
+				if (click === 0){
+					let full = result;
+					var content = '';
+					let newP = document.createElement("p");
+					content = document.createTextNode(full);
+					newP.appendChild(content);
+					document.getElementById("q7").appendChild(newP);
+					click++;
+				}
+			});
+		</pre>
+		<button type="button" id="q8_btn">Show Result</button>
+	</div>
+	</section>
+
+	<section id="q9">
+	<div class="wrapper">
+		<h2>9. Create an example using Spread Operators.</h2>
+		<pre>
+			var click = 0;
+
+			var fruits = [' bananas', ' apples', ' oranges', ' blackberries'];
+			var healthyThings = ['lettuce', ...fruits, ' tomatoes'];
+
+			document.querySelector('#q9_btn').addEventListener('click', function() {	
+				if (click === 0){
+					let full = healthyThings;
+					var content = '';
+					let newP = document.createElement("p");
+					content = document.createTextNode(full);
+					newP.appendChild(content);
+					document.getElementById("q9").appendChild(newP);
+					click++;
+				}
+			});
+		</pre>
+		<button type="button" id="q9_btn">Show Result</button>
+	</div>
+	</section>
+
+	<section id="q10">
+	<div class="wrapper">
+		<h2>10. Create an example using Template Literals.</h2>
+		<pre>
+			var click = 0;
+
+			function genContent(name, gender, hairColor) {
+				let full = `${name} is a ${gender} and has ${hairColor} hair.`;
+				var content = '';
+				let newP = document.createElement("p");
+				content = document.createTextNode(full);
+				newP.appendChild(content);
+				document.getElementById("q10").appendChild(newP);
+			}
+
+			document.querySelector('#q10_btn').addEventListener('click', function() {	
+				if (click === 0){
+					genContent("Dean", "boy", "brown");
+					click++;
+				}
+			});
+		</pre>
+		<button type="button" id="q10_btn">Show Result</button>
+	</div>
+	</section>
+</body>
+
+<script src="js/main.js"></script>
+</html>
